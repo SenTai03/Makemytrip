@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="mmtLogoWhite.png" alt="logo" width="113px" height="36px" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="custom-offers-section makeFlex perfectCenter makeRelative">
+                        <div class="custom-offer-icon">
+                            <img src="icon.png" alt="discount" width="25px" height="25px" class="d-inline-block align-text-top">
+                        </div>
+                        <div class="custom-offer-content">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <br>
+                    </li>
+                    <li class="custom-myBiz-section makeFlex perfectCenter makeRelative myBizIntro" id="showBizUpgradePopup">
+                        <div class="custom-myBiz-icon">
+                            <img src="mybiz.avif" alt="mybiz" width="70px" height="40px" class="d-inline-block align-text-top">
+                        </div>
+                        <div class="custom-myBiz-content">
+                            
+                        </div>
+                    </li>
+
+                    <li class="custom-myBiz-section makeFlex perfectCenter makeRelative myBizIntro" id="showBizUpgradePopup">
+                        <div class="custom-myBiz-icon">
+                            <img src="suitcase.png" alt="suitcase" width="50px" height="40px" class="d-inline-block align-text-top">
+                        </div>
+                        <div class="custom-myBiz-content">
+                            <h4 class="custom-myBiz-title whiteText latoBold">My Trips</h4>
+                            <h5 class="custom-myBiz-subtitle font10 whiteText">Manage your Bookings</h5>
+                        </div>
+                    </li>
+                    <img src="A.png" alt="A" width="40px" height="40px" class="d-inline-block align-text-top">
+                    <li class="nav-item dropdown">
+                        <div class="custom-myBiz-icon">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hi Traveller
+                            </a>
+                        </div>
+                    <li>
+                        <div class="translucent-box">
+                            <div data-cy="LanguageSwitcherWidget" class="whiteText makeFlex perfectCenter langSlct">
+                                <img src="flag.webp" alt="A" width="30px" height="25px" class="d-inline-block align-text-top">
+                                <span class="flags flagSprite appendRight5 in"></span>
+                                <span class="latoBold capText font11">
+                                    <span>IN</span> |
+                                    <span>Eng</span> 
+                                    
+                                </span>
+                                <span data-cy="switcherDownArrow" class="switcherDownArrow appendLeft10"></span>
+                            </div>
+                        </div>
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="curved-box">
+        <nav class="navbar1 navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" >
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#"><img src="flight.jpg" alt="Flights">Flights</a>
+                        <a class="nav-link" href="#"><img src="hotel.jpg" alt="Hotels">Hotels</a>
+                        <a class="nav-link" href="#"><img src="homestay.png" alt="Homestays & Villas">Homestays & Villas</a>
+                        <a class="nav-link" href="#"><img src="holiday.png" alt="Homestays & Villas">Holidays</a>
+                        <a class="nav-link" href="#"><img src="train.avif" alt="Trains">Trains</a>
+                        <a class="nav-link" href="#"><img src="bus.webp" alt="Buses">Buses</a>
+                        <a class="nav-link" href="#"><img src="cab.jpg" alt="Cabs">Cabs</a>
+                        <a class="nav-link" href="#"><img src="forex.png" alt="Forex Card & Currency">Forex Currency</a>
+                        <a class="nav-link" href="#"><img src="insurance.png" alt="Travel Insurance">Travel Insurance</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="curved-box2">
+        <br>
+        <br>
+        <br>
+    <div class="radio-container">
+        <div class="radio-item">
+            <input type="radio" id="oneWay" name="tripType" value="oneWay">
+            <label for="oneWay" class="radio-label">One Way</label>
+        </div>
+
+        <div class="radio-item">
+            <input type="radio" id="roundTrip" name="tripType" value="roundTrip">
+            <label for="roundTrip" class="radio-label">Round Trip</label>
+        </div>
+
+        <div class="radio-item">
+            <input type="radio" id="multiCity" name="tripType" value="multiCity">
+            <label for="multiCity" class="radio-label">Multicity</label>
+        </div>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h6>From</h6>
+                        <h4><b>Dubai</b></h4>
+                        <h6>DXB,Dubai International Airport</h6>
+                    </td>
+                    <td>
+                        <h6>To</h6>
+                        <h4><b>Mumbai</b></h4>
+                        <h6>BOM, Chhatrapati Shivaji International Airport</h6>
+                    </td>
+                    <td>
+                        <h6>Departure</h6>
+                        <h3>12th Dec'23</h3>
+                    </td>
+                    <td>
+                        <h6 class="dropdown-toggle">Return</h6>
+                        <h6 color = "grey">Tap to add a return date for bigger discounts</h6>
+                    </td>
+                    <td>
+                        <h6 class="dropdown-toggle">Traveller and Class</h6>
+                        <h3><b>1</b></h3><h4>Traveller</h4>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <div class="fare-container">
+            <span>Select a fare type:</span>
+            <div class="fare-item regfare">
+                <input type="radio" id="regularFare" name="fareType" value="regularFare">
+                <label for="regularFare" class="fare-label">Regular Fares</label>
+            </div>
+    
+            <div class="fare-item regfare">
+                <input type="radio" id="armedForcesFare" name="fareType" value="armedForcesFare">
+                <label for="armedForcesFare" class="fare-label">Armed Forces Fares</label>
+                <div class="specialFareTooltip">
+                    <p>Armed Forces Fares</p>
+                </div>
+            </div>
+
+            <div class="fare-item regfare">
+                <input type="radio" id="regularFare" name="fareType" value="regularFare">
+                <label for="regularFare" class="fare-label">Student Fares</label>
+            </div>
+
+            <div class="fare-item regfare">
+                <input type="radio" id="regularFare" name="fareType" value="regularFare">
+                <label for="regularFare" class="fare-label">Senior Citizen Fares</label>
+            </div>
+
+            <div class="fare-item regfare">
+                <input type="radio" id="regularFare" name="fareType" value="regularFare">
+                <label for="regularFare" class="fare-label">Regular Fares</label>
+            </div>
+
+            <div class="fare-item regfare">
+                <input type="radio" id="regularFare" name="fareType" value="regularFare">
+                <label for="regularFare" class="fare-label">Doctors and Nurses</label>
+            </div>
+    </div>
+    <div class="container">
+        <!-- Search button -->
+        <button class="search-button">Srikanth</button>
+    </div>
+</body>
+</html>
